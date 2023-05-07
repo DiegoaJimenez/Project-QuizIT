@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Project-QuizIT</string>
     <string name="inicio">Iniciar Sesión</string>
+    <string name="registro">Registrate en QuizIT</string>
     <string name="olvidaste"><u>Olvidaste tu contraseña?</u></string>
     <string name="register"><u>Registrarse</u></string>
+    <string name="invitacion">Registrarte y participa en trivias relacionadas con sistemas operativos, leguajes de programación, Cloud Computing y mucho mas...</string>
+    <string name="title_activity_home">homeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

@@ -12,6 +12,15 @@
         android:theme="@style/Theme.ProjectQuizIT"
         tools:targetApi="31">
         <activity
+            android:name=".homeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.ProjectQuizIT.NoActionBar" />
+        <activity
+            android:name=".registroUsuairoActivity"
+            android:exported="false"
+            android:label="@string/registro" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
