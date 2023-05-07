@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1F618D</color>
+    <color name="yellow">#FFC300</color>
+    <color name="green">#2ECC71</color>
+    <color name="bluedark">#0a0fc0</color>
+    <color name="google">#F95F62</color>
+    <color name="git">#343F4B</color>
+
 </resources>
+
