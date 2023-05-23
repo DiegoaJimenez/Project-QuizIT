@@ -23,7 +23,7 @@
         app:navGraph="@navigation/nav_graph" />
 
     <TextView
-        android:id="@+id/titleTextView2"
+        android:id="@+id/titleCategorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Categorias:"
@@ -41,20 +41,22 @@
         android:id="@+id/master"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView2"
+        app:layout_constraintTop_toBottomOf="@id/titleCategorias"
         android:layout_margin="16dp"
         >
 
         <LinearLayout
             android:id="@+id/layoutmain"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:padding="16dp"
@@ -89,9 +91,11 @@
 
         <LinearLayout
             android:id="@+id/layoutmain2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
             android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginHorizontal="16dp"
@@ -105,7 +109,7 @@
                 android:layout_height="200dp" />
 
             <TextView
-                android:id="@+id/titleTextView3"
+                android:id="@+id/titleTextView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ejesd"
@@ -120,6 +124,101 @@
 
             <Button
                 android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:text="Button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/master2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/master"
+        android:layout_margin="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layoutmain3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/titleTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subtitleTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:text="Button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutmain4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginHorizontal="16dp"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/titleTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ejesd"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subtitleTextView4"
+                android:layout_width="match_parent"
+                android:text="es"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/green"
