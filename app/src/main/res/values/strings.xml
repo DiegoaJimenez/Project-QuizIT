@@ -12,6 +12,9 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="tomarQuiz"><u>Tomar Quiz</u></string>
+
+
     <string name="hello_first_fragment">Pantalla principal</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->

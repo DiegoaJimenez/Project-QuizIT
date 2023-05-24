@@ -13,6 +13,8 @@
     <color name="bluedark">#0a0fc0</color>
     <color name="google">#F95F62</color>
     <color name="git">#343F4B</color>
+    <color name="grisClaro">#5A6978</color>
+    <color name="grisText">#969FAA</color>
 
 </resources>
 
