@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="Categorias:"
                 android:textColor="@color/yellow"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:background="@color/git"
+                        android:background="@drawable/rounded_top"
+
 
                         >
                         <ImageView
@@ -83,9 +84,9 @@
                         <TextView
                             android:id="@+id/textQuiz1"
                             android:layout_width="wrap_content"
-                            android:text="Linux"
-                            android:gravity="center_vertical"
                             android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -95,6 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Total preguntas : 50"
+
                         android:padding="5dp"
                         android:textColor="@color/white"
                         android:gravity="center"
@@ -103,7 +105,7 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/subtitleTextView"
+                        android:id="@+id/textTomarQuiz1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/tomarQuiz"
@@ -111,63 +113,91 @@
                         android:textColorLink="@color/yellow"
                         android:gravity="center"
                         android:paddingTop="1dp"
-                        android:paddingBottom="7dp"
-                        android:background="@color/grisClaro"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
                         android:textSize="14sp" />
 
 
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:id="@+id/layoutmain2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    android:layout_marginHorizontal="16dp"
-
+                    android:padding="5dp"
 
                     >
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp" />
-
-                    <TextView
-                        android:id="@+id/titleTextView2"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ejesd"
-                        android:textSize="18sp" />
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
+
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textCount2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/subtitleTextView2"
+                        android:id="@+id/textTomarQuiz2"
                         android:layout_width="match_parent"
-                        android:text="es"
                         android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
                         android:textSize="14sp" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/green"
-                        android:text="Button" />
+
 
                 </LinearLayout>
+
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/master2"
+                android:id="@+id/master3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -184,33 +214,64 @@
                     android:layout_margin="8dp"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical"
-                    android:padding="16dp"
+                    android:padding="5dp"
 
                     >
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp" />
-
-                    <TextView
-                        android:id="@+id/titleTextView3"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp" />
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
 
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
                     <TextView
-                        android:id="@+id/subtitleTextView3"
+                        android:id="@+id/textCount3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textTomarQuiz3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
                         android:textSize="14sp" />
 
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/green"
-                        android:text="Button" />
+
 
                 </LinearLayout>
 
@@ -218,44 +279,377 @@
                     android:id="@+id/layoutmain4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    android:layout_marginHorizontal="16dp"
-
+                    android:padding="5dp"
 
                     >
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp" />
-
-                    <TextView
-                        android:id="@+id/titleTextView4"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ejesd"
-                        android:textSize="18sp" />
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
+
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textCount4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/subtitleTextView4"
+                        android:id="@+id/textTomarQuiz4"
                         android:layout_width="match_parent"
-                        android:text="es"
                         android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
                         android:textSize="14sp" />
 
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/green"
-                        android:text="Button" />
+
 
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/master4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/master"
+                android:layout_margin="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/layoutmain5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
+
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textCount5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textTomarQuiz5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
+                        android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutmain6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
+
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textCount6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textTomarQuiz6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
+                        android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/master7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/master"
+                android:layout_margin="16dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/layoutmain7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
+
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textCount7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textTomarQuiz7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
+                        android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutmain8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_top"
+
+
+                        >
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/git"
+                            android:src="@drawable/iconlinux"
+                            android:layout_margin="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textQuiz8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Linux"
+                            android:textColor="@color/grisText"
+
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/textCount8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total preguntas : 50"
+
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/grisClaro"
+                        android:autoLink="web"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textTomarQuiz8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tomarQuiz"
+                        android:textColor="@color/yellow"
+                        android:textColorLink="@color/yellow"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="9dp"
+                        android:background="@drawable/rounde_botton"
+                        android:autoLink="web"
+                        android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 

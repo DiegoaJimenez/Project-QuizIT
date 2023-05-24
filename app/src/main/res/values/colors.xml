@@ -15,6 +15,7 @@
     <color name="git">#343F4B</color>
     <color name="grisClaro">#5A6978</color>
     <color name="grisText">#969FAA</color>
+    <color name="border">#C0CCDA</color>
 
 </resources>
 
