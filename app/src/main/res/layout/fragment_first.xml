@@ -50,7 +50,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/scroll"
-                android:layout_margin="16dp"
+
                 >
 
                 <LinearLayout
@@ -74,8 +74,8 @@
                         >
                         <ImageView
                             android:id="@+id/imageView1"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
                             android:src="@drawable/iconlinux"
                             android:layout_margin="10dp"
@@ -203,7 +203,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/master"
-                android:layout_margin="16dp"
+
                 >
 
                 <LinearLayout
@@ -355,7 +355,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/master"
-                android:layout_margin="16dp"
+
                 >
 
                 <LinearLayout
@@ -507,7 +507,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/master"
-                android:layout_margin="16dp"
+
                 >
 
                 <LinearLayout
