@@ -33,9 +33,10 @@
                 android:layout_height="wrap_content"
                 android:text="Categorias:"
                 android:textColor="@color/yellow"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_content_home" />
@@ -96,7 +97,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Total preguntas : 50"
-
                         android:padding="5dp"
                         android:textColor="@color/white"
                         android:gravity="center"
@@ -142,10 +142,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView2"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/docker"
                             android:layout_margin="10dp"
                             />
 
@@ -154,7 +154,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="Docker"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -227,10 +227,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView3"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/mysql"
                             android:layout_margin="10dp"
                             />
 
@@ -239,7 +239,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="MySQL"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -296,10 +296,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView4"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/html"
                             android:layout_margin="10dp"
                             />
 
@@ -308,7 +308,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="Html"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -379,10 +379,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView5"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/js"
                             android:layout_margin="10dp"
                             />
 
@@ -391,7 +391,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="JScript"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -448,10 +448,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView6"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/bash"
                             android:layout_margin="10dp"
                             />
 
@@ -460,7 +460,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="Bash"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -531,10 +531,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView7"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/cloud"
                             android:layout_margin="10dp"
                             />
 
@@ -543,7 +543,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="Cloud"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -600,10 +600,10 @@
                         >
                         <ImageView
                             android:id="@+id/imageView8"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:background="@color/git"
-                            android:src="@drawable/iconlinux"
+                            android:src="@drawable/devops"
                             android:layout_margin="10dp"
                             />
 
@@ -612,7 +612,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center_vertical"
-                            android:text="Linux"
+                            android:text="DevOps"
                             android:textColor="@color/grisText"
 
                             android:textSize="30sp" />
@@ -636,6 +636,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tomarQuiz"
                         android:textColor="@color/yellow"
+                        android:textStyle="bold"
                         android:textColorLink="@color/yellow"
                         android:gravity="center"
                         android:paddingTop="1dp"
