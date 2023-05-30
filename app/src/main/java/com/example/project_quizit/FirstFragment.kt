@@ -33,7 +33,12 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.textTomarQuiz1.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            val args = Bundle()
+            //args.putFloat("number1",binding.number1.text.toString().toFloatOrNull()?:0.0)
+            args.putString("textCount",binding.textCount.text.toString())
+
+
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, args)
         }
     }
 
