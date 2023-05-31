@@ -35,7 +35,7 @@ class FirstFragment : Fragment() {
         binding.textTomarQuiz1.setOnClickListener {
             val args = Bundle()
             //args.putFloat("number1",binding.number1.text.toString().toFloatOrNull()?:0.0)
-            args.putString("textCount",binding.textCount.text.toString())
+            args.putString("textCount",binding.textQuiz1.text.toString())
 
 
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, args)
