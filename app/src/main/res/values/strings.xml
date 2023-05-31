@@ -8,7 +8,8 @@
     <string name="title_activity_home">homeActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">QuizIT</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="linux_fragment_label">QuizIT-Linux</string>
+    <string name="Docker_fragment_label">QuizIT-Docker</string>
     <string name="next">Next</string>
     <string name="previous">Mostrar quiz</string>
 

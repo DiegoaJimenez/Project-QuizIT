@@ -36,9 +36,14 @@ class FirstFragment : Fragment() {
             val args = Bundle()
             //args.putFloat("number1",binding.number1.text.toString().toFloatOrNull()?:0.0)
             args.putString("textCount",binding.textQuiz1.text.toString())
-
-
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, args)
+        }
+
+        binding.textTomarQuiz2.setOnClickListener {
+            val args = Bundle()
+            //args.putFloat("number1",binding.number1.text.toString().toFloatOrNull()?:0.0)
+            args.putString("textCount",binding.textQuiz2.text.toString())
+            findNavController().navigate(R.id.action_FirstFragment_to_DockerFragment, args)
         }
     }
 
