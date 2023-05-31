@@ -21,9 +21,28 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_DockerFragment"
+            app:destination="@id/DockerFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
+        android:name="com.example.project_quizit.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <argument
+            android:name="number2"
+            app:argType="float"
+            android:defaultValue="3.0"/>
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DockerFragment"
         android:name="com.example.project_quizit.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
