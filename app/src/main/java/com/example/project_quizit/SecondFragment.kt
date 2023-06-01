@@ -11,6 +11,8 @@ import androidx.navigation.fragment.navArgs
 
 import com.example.project_quizit.databinding.FragmentSecondBinding
 import com.koushikdutta.ion.Ion
+import okhttp3.*
+import java.io.IOException
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -19,6 +21,8 @@ class SecondFragment : Fragment() {
 
     //val args: SecondFragmentArgs by navArgs()
     private var _binding: FragmentSecondBinding? = null
+
+    //private val client = OkHttpClient()
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -52,6 +56,11 @@ class SecondFragment : Fragment() {
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
+
+        binding.buttonquiz.setOnClickListener {
+            //findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+            loadDataApi()
+        }
     }
 
     override fun onDestroyView() {
@@ -59,8 +68,29 @@ class SecondFragment : Fragment() {
         _binding = null
     }
 
-    fun loadDataApi(){
-        Ion.with(this.activity)
-            .load("")
+    private fun loadDataApi(){
+        val client = OkHttpClient()
+        val url = "https://quizapi.io/api/v1/questions?apiKey=5nZ0X4lZfpX1aYWUYbCkGRF3Jp3so7TkfOzv76yf"
+        Log.d("TAGURL","URL api: $url")
+        val request = Request.Builder()
+            .url(url)
+            .get()
+            .build()
+        Log.d("TAGREQUEST","REQUEST api: $request")
+        client.newCall(request).enqueue(object : Callback {
+
+            override fun onResponse(call: Call, response: Response) {
+
+                val responseBody = response.body?.string()
+                Log.d("TAGRESPOSE","respuesta api: $responseBody")
+            }
+
+            override fun onFailure(call: Call, e: IOException) {
+
+                Log.d("TAGERROR","error api: $e")
+
+            }
+        })
+
     }
 }
