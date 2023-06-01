@@ -12,20 +12,12 @@
         android:layout_height="wrap_content"
         android:textColor="@color/grisText"
         android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintBottom_toTopOf="@id/buttonquiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
     <Button
         android:id="@+id/buttonquiz"
         android:layout_width="wrap_content"
@@ -34,5 +26,91 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_second" />
+        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonquiz">
+
+        <TextView
+            android:id="@+id/preguntaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="¿Cuál es el comando para listar directorios?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/opcion1Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mkdir"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:padding="3dp"
+            />
+
+        <CheckBox
+            android:id="@+id/opcion2Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="35dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/opcion1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ls"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="40dp"/>
+
+            <CheckBox
+                android:id="@+id/opcion2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:padding="1dp"
+                android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/enviarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

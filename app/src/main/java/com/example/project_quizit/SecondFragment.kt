@@ -53,9 +53,6 @@ class SecondFragment : Fragment() {
 
         binding.textviewSecond.text = textCount
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
 
         binding.buttonquiz.setOnClickListener {
             //findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
@@ -70,25 +67,21 @@ class SecondFragment : Fragment() {
 
     private fun loadDataApi(){
         val client = OkHttpClient()
-        val url = "https://quizapi.io/api/v1/questions?apiKey=5nZ0X4lZfpX1aYWUYbCkGRF3Jp3so7TkfOzv76yf"
+        val url = "https://quizapi.io/api/v1/questions?apiKey=5nZ0X4lZfpX1aYWUYbCkGRF3Jp3so7TkfOzv76yf&category=Linux"
         Log.d("TAGURL","URL api: $url")
         val request = Request.Builder()
             .url(url)
             .get()
             .build()
         Log.d("TAGREQUEST","REQUEST api: $request")
+
         client.newCall(request).enqueue(object : Callback {
-
             override fun onResponse(call: Call, response: Response) {
-
                 val responseBody = response.body?.string()
                 Log.d("TAGRESPOSE","respuesta api: $responseBody")
             }
-
             override fun onFailure(call: Call, e: IOException) {
-
                 Log.d("TAGERROR","error api: $e")
-
             }
         })
 
