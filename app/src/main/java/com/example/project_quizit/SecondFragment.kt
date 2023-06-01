@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 
 import com.example.project_quizit.databinding.FragmentSecondBinding
+import com.koushikdutta.ion.Ion
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -56,5 +57,10 @@ class SecondFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    fun loadDataApi(){
+        Ion.with(this.activity)
+            .load("")
     }
 }
